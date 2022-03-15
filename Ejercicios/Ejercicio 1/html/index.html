@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Aps Drive</title>
+</head>
+<body>
+<!-- Colores: #A99F87, #EDF1F2, #325D72, #228280, #BA6330, #BF6336, #A03522, #523A28-->
+<div class="principal-title">Aps drive</div>
+
+<!-- Form -->
+<form id="main-form" method="post" action="">
+    <!-- Form title -->
+    <div id="form-title">Formulario para subir archivo</div>
+
+    <!-- Upload file with username (Required) -->
+    <div class="input-group">
+        <label for="file-owner">Nombre</label><br>
+        <input type="text" id="file-owner" name="nombre" placeholder="Ingresa tu nombre aquí." minlength="5"
+               maxlength="100" required>
+    </div>
+    <br>
+    <br>
+
+    <!-- Button to choose the file (Required) -->
+    <div class="input-group">
+        <label for="archivo">Subir Archivo</label><br>
+        <input type="file" id="archivo" name="archivo" required>
+    </div>
+    <br>
+    <br>
+
+    <!-- Privacy format: Public or Private -->
+    <div class="input-group">
+        <label>Privacidad</label><br>
+        <label for="public">Público</label>
+        <input type="radio" id="public" name="privacidad" value="1" required>
+        <label for="private">Privado</label>
+        <input type="radio" id="private" name="privacidad" value="2" required>
+    </div>
+    <br>
+    <br>
+
+    <!-- File can be uploaded with password (Optional) -->
+    <div class="input-group">
+        <label for="password">Contraseña</label><br>
+        <input type="password" id="password" name="password" placeholder="Escribe una contraseña." maxlength="10">
+    </div>
+    <br><br>
+
+    <!-- Categories: 4 Multiple choice (Required)-->
+    <div class="input-group">
+        <label for="categorias">Categorias</label><br>
+        <select name="categorias" id="categorias" required>
+            <option value="">&nbsp;</option>
+            <!--Solution from Stackoverflow: https://stackoverflow.com/questions/22237658/html5-validation-error-with-select-required-attribute -->
+            <option value="1">Archivos de Ocio</option>
+            <option value="2">Archivos Educativos</option>
+            <option value="3">Archivos Personales</option>
+            <option value="4">Otros</option>
+        </select>
+    </div>
+    <br><br>
+
+    <!-- Comment area: 30 cols, 3 rows and 1000 max length-->
+    <div class="input-group">
+        <label for="comentarios">Comentarios</label><br>
+        <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí un comentario." maxlength="1000"
+                  rows="3"
+                  cols="30"></textarea>
+    </div>
+    <br>
+
+    <!-- Submit button -->
+    <div class="button">
+        <button type="submit">Upload</button>
+    </div>
+    <br>
+    <!-- Extra: Banner -->
+    <img class="start-image" src="../images/ApsDrive.jpg" alt="Man transporting box with pallet truck "><br>
+</form>
+</body>
+</html>
