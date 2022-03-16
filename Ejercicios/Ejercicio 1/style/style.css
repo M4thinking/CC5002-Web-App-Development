@@ -3,8 +3,10 @@ body{
     font-size: 12px;
     font-family: BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    margin: 10px;
-    min-width: 600px;
+    margin: auto;
+    min-width: 280px;
+    max-width: 400px;
+    padding-bottom: 2%;
 }
 
 label {
@@ -47,14 +49,14 @@ input, textarea, button{
     border: black;
     background-color: #3c8380;
     width: 50%;
-    margin-left: 25%;
+    margin: 0 auto;
     padding: 15px;
     border-radius: 15px;
     box-shadow: rgba(132, 132, 132, 0.57) 0 0 5px 6px;
     min-width: 300px;
 }
 
-#password, #comentarios, #file-owner{
+#password, #comentarios, #nombre, #archivo{
     font-size: 10px;
 }
 
